@@ -40,6 +40,7 @@
 		 使用box-sizing:border-box属性。要一个元素的宽度严格是其父元素的某个百分比，但是又要给其子元素周边留出点空白
 		</p>
 		<p>参考文章:
+			https://zhuanlan.zhihu.com/p/24778275
 		</p>	
 	</li>
 	
