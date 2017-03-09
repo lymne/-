@@ -79,4 +79,32 @@
 		<p>参考文章:
 		</p>		
 	</li>
+	<li><strong>js实现clone方法对各种数据类型进行复制</strong>
+		<code>function clone(obj){
+            var copy;
+            switch(typeof obj){
+                case 'undefined':break;
+                case 'number':
+                case 'string':
+                case 'boolean':copy = obj;break;
+                case 'object':
+                    if(obj == null) copy = null;
+                    else if(toString.apply(obj) === '[object Array]')
+                    {
+                        copy = [];
+                        for(var i in obj) copy.push(clone(obj[i]));
+                    }
+                    else 
+                    {
+                        copy = {};
+                        for(var j in obj)
+                            copy[j]= clone(obj[j]);
+                    }
+            }
+            return copy;
+        }
+		</code>
+		<p>参考文章:
+		</p>		
+	</li>
 </ul>
