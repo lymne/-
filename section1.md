@@ -85,11 +85,7 @@
    			   var buf;
 			   if(typeof(obj)==="object"){
 			      if(obj instanceof Array){
-			         buf = [];
-			         var i = obj.length;
-			         while(i--){
-			           buf[i] = clone(obj[i]);
-			         }
+			        buf = obj.slice();
 			        return buf;
 			      }
 			     if(obj instanceof Object){
