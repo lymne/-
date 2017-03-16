@@ -42,6 +42,7 @@
 	<li><strong>NAN</strong>
 		<p>NAN的类型是Number </p>
 	</li>
-
-		
+	<li>
+		<p>自动装箱</p>
+	</li>
 </ul>
