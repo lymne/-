@@ -42,7 +42,16 @@
 	<li><strong>NAN</strong>
 		<p>NAN的类型是Number </p>
 	</li>
-	<li>
-		<p>自动装箱</p>
+</ul>
+
+<h1>types & grammar</h1>
+<ul>
+	<li><strong>值 & 引用</strong>
+		<p>在 Javascript 中，值的类型决定了值是value-copy还是reference-copy </p>
+		<p>Simple values (aka scalar primitives) are always assigned/passed by value-copy: null, undefined, string, number, boolean, and ES6's symbol</p>
+		<p>But both c and d are separate references to the same shared value [1,2,3], which is a compound value. It's important to note that neither c nor d more "owns" the [1,2,3] value -- both are just equal peer references to the value. So, when using either reference to modify (.push(4)) the actual shared array value itself, it's affecting just the one shared value, and both references will reference the newly modified value [1,2,3,4].</p>
+	</li>
+	<li><strong>NAN</strong>
+		<p>NAN的类型是Number </p>
 	</li>
 </ul>
